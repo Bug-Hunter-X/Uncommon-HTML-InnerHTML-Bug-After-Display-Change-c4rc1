@@ -1,0 +1,3 @@
+This repository demonstrates an uncommon HTML bug related to manipulating the innerHTML of an element immediately after changing its display property to "none". The bug and its solution are provided in separate HTML files.
+
+The bug occurs because the browser's rendering engine may not immediately update the UI after the display property is changed.  Attempting to modify the innerHTML before the UI updates can lead to the changes not being reflected in the displayed content. The solution addresses this by introducing a small delay using `setTimeout` to allow the browser to update the display before making the innerHTML change.
